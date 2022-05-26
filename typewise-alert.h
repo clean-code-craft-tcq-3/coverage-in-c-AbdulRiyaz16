@@ -35,7 +35,7 @@ typedef struct
   double higherLimit ;
 } temperatureBreach;
 
-temperatureBreach tempBreach[] = {{PASSIVE_COOLING, 0, 35}, {HI_ACTIVE_COOLING, 0, 45}, {MED_ACTIVE_COOLING, 0, 40},};
+temperatureBreach tempBreach[] = {{PASSIVE_COOLING, 0, 35}, {HI_ACTIVE_COOLING, 0, 45}, {MED_ACTIVE_COOLING, 0, 40}};
 
 void checkAndAlert(AlertTarget alertTarget, BatteryCharacter batteryChar, double temperatureInC);
 BreachType inferBreach(double value, double lowerLimit, double upperLimit);
