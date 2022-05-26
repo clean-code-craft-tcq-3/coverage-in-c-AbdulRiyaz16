@@ -42,3 +42,4 @@ BreachType inferBreach(double value, double lowerLimit, double upperLimit);
 BreachType classifyTemperatureBreach(CoolingType coolingType, double temperatureInC);
 void sendToController(BreachType breachType);
 void sendToEmail(BreachType breachType);
+void checkAlertTarget(AlertTarget alertTarget,BreachType breachType);
