@@ -32,7 +32,7 @@ typedef struct
 {
   CoolingType coolingType ;
   double lowerLimit ;
-  double higherLimit ;
+  double upperLimit ;
 } temperatureBreach;
 
 
