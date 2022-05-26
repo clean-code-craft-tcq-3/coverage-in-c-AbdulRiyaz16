@@ -33,9 +33,9 @@ typedef struct
   CoolingType coolingType ;
   double lowerLimit ;
   double higherLimit ;
-} classifyTemperatureBreach;
+} temperatureBreach;
 
-classifyTemperatureBreach classifyTemperatureBreach[] = {{PASSIVE_COOLING, 0, 35}, {HI_ACTIVE_COOLING, 0, 45}, {MED_ACTIVE_COOLING, 0, 40},};
+classifyTemperatureBreach temperatureBreach[] = {{PASSIVE_COOLING, 0, 35}, {HI_ACTIVE_COOLING, 0, 45}, {MED_ACTIVE_COOLING, 0, 40},};
 
 void checkAndAlert(AlertTarget alertTarget, BatteryCharacter batteryChar, double temperatureInC);
 BreachType inferBreach(double value, double lowerLimit, double upperLimit);
