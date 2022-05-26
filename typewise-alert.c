@@ -19,6 +19,11 @@ void checkAndAlert(AlertTarget alertTarget, BatteryCharacter batteryChar, double
   breachType == TOO_HIGH ? printf("\ntemperature is too high\n") : breachType == TOO_LOW ? printf("\ntemperature is too low\n"): printf("\ntemperature is Normal\n");
   checkAlertTarget(alertTarget,breachType);
 }
+
+void checkAlertTarget(alertTarget,breachType)
+{
+
+}
   
 
 void sendToController(BreachType breachType)
