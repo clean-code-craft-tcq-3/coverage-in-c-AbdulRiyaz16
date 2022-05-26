@@ -20,9 +20,10 @@ void checkAndAlert(AlertTarget alertTarget, BatteryCharacter batteryChar, double
   checkAlertTarget(alertTarget,breachType);
 }
 
-void checkAlertTarget(alertTarget,breachType)
+void checkAlertTarget(AlertTarget alertTarget,BreachType breachType)
 {
-
+  alertTarget == TO_CONTROLLER ? sendToController(breachType) : alertTarget == TO_CONTROLLER ? sendToEmail(breachType); 
+  
 }
   
 
