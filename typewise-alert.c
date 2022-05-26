@@ -1,6 +1,8 @@
 #include "typewise-alert.h"
 #include <stdio.h>
 
+temperatureBreach tempBreach = {{PASSIVE_COOLING, 0, 35}, {HI_ACTIVE_COOLING, 0, 45}, {MED_ACTIVE_COOLING, 0, 40}};
+
 BreachType inferBreach(double value, double lowerLimit, double upperLimit)
 {
   return value > upperLimit ? TOO_HIGH : value < lowerLimit ? TOO_LOW : NORMAL;
