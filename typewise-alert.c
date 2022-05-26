@@ -16,7 +16,7 @@ BreachType classifyTemperatureBreach(CoolingType coolingType, double temperature
 void checkAndAlert(AlertTarget alertTarget, BatteryCharacter batteryChar, double temperatureInC)
 {
   BreachType breachType = classifyTemperatureBreach(batteryChar.coolingType, temperatureInC);
-  breachType == TOO_HIGH ? printf("\ntemperature is too high\n"); : breachType == TOO_LOW ? printf("\ntemperature is too low\n");: printf("\ntemperature is Normal\n");;
+  breachType == TOO_HIGH ? printf("\ntemperature is too high\n"); : breachType == TOO_LOW ? printf("\ntemperature is too low\n");: printf("\ntemperature is Normal\n");
 }
   
 
