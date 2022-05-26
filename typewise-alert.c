@@ -22,7 +22,14 @@ void checkAndAlert(AlertTarget alertTarget, BatteryCharacter batteryChar, double
 
 void checkAlertTarget(AlertTarget alertTarget,BreachType breachType)
 {
-  alertTarget == TO_CONTROLLER ? sendToController(breachType) : alertTarget == TO_CONTROLLER ? sendToEmail(breachType); 
+  switch(alertTarget) {
+    case TO_CONTROLLER:
+      sendToController(breachType);
+      break;
+    case TO_EMAIL:
+      sendToEmail(breachType);
+      break;
+  }
   
 }
   
