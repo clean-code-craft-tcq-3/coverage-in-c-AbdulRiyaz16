@@ -36,7 +36,7 @@ TEST_CASE("Check for checkAndAlert functionality") {
 }
 
 TEST_CASE("Check for classifyTemperatureBreach Functionality") {
-  REQUIRE(classifyTemperatureBreach(PASSIVE_COOLING, 0) == TOO_LOW);
+  REQUIRE(classifyTemperatureBreach(PASSIVE_COOLING, 0) == NORMAL);
   REQUIRE(classifyTemperatureBreach(PASSIVE_COOLING, -1) == TOO_LOW);
   REQUIRE(classifyTemperatureBreach(PASSIVE_COOLING, 35) == TOO_HIGH);
   REQUIRE(classifyTemperatureBreach(PASSIVE_COOLING, 20) == NORMAL);
